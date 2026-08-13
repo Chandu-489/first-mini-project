@@ -34,7 +34,7 @@
     </ol>
 
     <h2>Best song in Temper🕺</h2>
-    <audio controls src="./Temper-SenSongsMp3.Co.mp3"></audio
+    <audio id="myVideo" controls src="./Temper-SenSongsMp3.Co.mp3"></audio
     ><br />
     <image
       height="200"
@@ -43,11 +43,26 @@
     ></image>
     <br />
     <video
+      id="myVideo"
       poster="/HTML_2026/Day1/images.jpg"
       height="200"
       src="./WhatsApp Video 2026-08-10 at 13.03.43.mp4"
       controls
       autoplay
     ></video>
+    <script>
+        const video = document.getElementById('myVideo');
+        const audio = document.getElementById('myAudio');
+
+        // When video plays, pause the audio
+        video.addEventListener('play', () => {
+            audio.pause();
+        });
+
+        // When audio plays, pause the video
+        audio.addEventListener('play', () => {
+            video.pause();
+        });
+    </script>
   </body>
 </html>
