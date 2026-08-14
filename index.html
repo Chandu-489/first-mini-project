@@ -30,7 +30,7 @@
       <li>Srinivasan as Deepthi</li>
       <li>Subbaraju as Ravi Amit</li>
       <li>Tiwari as Mani</li>
-      <dl>Kota Srinivasa Rao as Judge</dl>
+      <li>Kota Srinivasa Rao as Judge</li>
     </ol>
 
     <h2>Best song in Temper🕺</h2>
@@ -50,7 +50,19 @@
       controls
       autoplay
     ></video>
-    
+      <script>
+        const video = document.getElementById('myVideo');
+        const audio = document.getElementById('myAudio');
+
+        // When video plays, pause the audio
+        video.addEventListener('play', () => {
+            audio.pause();
+        });
+
+        // When audio plays, pause the video
+        audio.addEventListener('play', () => {
+            video.pause();
+        });
     </script>
   </body>
 </html>
