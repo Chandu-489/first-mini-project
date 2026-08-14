@@ -6,7 +6,7 @@
     <title>Document</title>
     <link
       rel="icon"
-      href="./WhatsApp Image 2025-04-15 at 21.37.42_a023eacd.jpg"
+      href="/HTML_2026/Day1/WhatsApp Image 2025-04-15 at 21.37.42_a023eacd.jpg"
     />
   </head>
   <body>
@@ -21,20 +21,24 @@
       <mark>of his own life.</mark>
     </p>
     <h2>Cast in this movie</h2>
-    <ol>
+    <ul>
       <li>N. T. Rama Rao Jr. as SI Daya</li>
-      <li>Kajal Aggarwal as Saanvi</li>
-      <li>Prakash Raj as Waltair Vasu</li>
-      <li>Posani Krishna Murali as Head Constable Narayana Murthy</li>
-      <li>Nyra Banerjee as Lakshmi Apoorva</li>
-      <li>Srinivasan as Deepthi</li>
-      <li>Subbaraju as Ravi Amit</li>
-      <li>Tiwari as Mani</li>
-      <li>Kota Srinivasa Rao as Judge</li>
-    </ol>
+      <dl>Kajal Aggarwal as Saanvi</dl>
+      <dl>Prakash Raj as Waltair Vasu</dl>
+      <dl>Posani Krishna Murali as Head Constable Narayana Murthy</dl>
+      <dl>Nyra Banerjee as Lakshmi Apoorva</dl>
+      <dl>Srinivasan as Deepthi</dl>
+      <dl>Subbaraju as Ravi Amit</dl>
+      <dl>Tiwari as Mani</dl>
+      <dl>Kota Srinivasa Rao as Judge</dl>
+    </ul>
 
     <h2>Best song in Temper🕺</h2>
-    <audio id="myVideo" controls src="./Temper-SenSongsMp3.Co.mp3"></audio
+    <audio
+      id="myAudio"
+      controls
+      src="/HTML_2026/Day1/Temper-SenSongsMp3.Co.mp3"
+    ></audio
     ><br />
     <image
       height="200"
@@ -46,23 +50,23 @@
       id="myVideo"
       poster="/HTML_2026/Day1/images.jpg"
       height="200"
-      src="./WhatsApp Video 2026-08-10 at 13.03.43.mp4"
+      src="/HTML_2026/Day1/WhatsApp Video 2026-08-10 at 13.03.43.mp4"
       controls
       autoplay
     ></video>
-      <script>
-        const video = document.getElementById('myVideo');
-        const audio = document.getElementById('myAudio');
+    <script>
+      const video = document.getElementById("myVideo");
+      const audio = document.getElementById("myAudio");
 
-        // When video plays, pause the audio
-        video.addEventListener('play', () => {
-            audio.pause();
-        });
+      // When video plays, pause the audio
+      video.addEventListener("play", () => {
+        audio.pause();
+      });
 
-        // When audio plays, pause the video
-        audio.addEventListener('play', () => {
-            video.pause();
-        });
+      // When audio plays, pause the video
+      audio.addEventListener("play", () => {
+        video.pause();
+      });
     </script>
   </body>
 </html>
